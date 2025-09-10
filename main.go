@@ -57,4 +57,9 @@ func main() {
 	s2 := "bro"
 	dist := LevenshteinDistance(s1, s2)
 	fmt.Printf("Levenshtein distance between '%s' and '%s' is %d\n", s1, s2, dist)
+
+	eth1 := "0x742d32Cc6634C0535925a3b844Bc454e4438f44e"
+	eth2 := "0x742d35Cc6634C0532925a3b844Bc454e4438f44f"
+	dist2 := LevenshteinDistance(eth1, eth2)
+	fmt.Printf("Levenshtein distance between\n'%s'\nand\n'%s'\nis %d\n\n", eth1, eth2, dist2)
 }
